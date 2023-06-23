@@ -16,10 +16,10 @@ This is a simple shopping website built using React. It allows users to browse t
 Download all the files in the repository 
 
 ### `2. npm install`
-i) Open the terminal or command prompt and navigate to the project's directory.
-ii) Run the following command to install the project dependencies:
+- Open the terminal or command prompt and navigate to the project's directory.
+- Run the following command to install the project dependencies:
 
 ### `3. npm start`
-i) Once the installation is finished, you can start the React project by running the following command.
-ii) Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-iii) The page will reload when you make changes.
+- Once the installation is finished, you can start the React project by running the following command.
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The page will reload when you make changes.
