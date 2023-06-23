@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heading {
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 10px;
+}
+
+.home {
+    margin-left: 20px;
+    font-size: 30px;
+    position: fixed;
+    color: #000;
+}
+
+/* PRODUCT LIST */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+    .main{
+        margin-left: 10vh;
+    }
+}
+@media (min-width: 501px) and (max-width: 750px) {
+    .main{
+        margin-left: 15vh;
+    }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+    .main{
+        margin-left: 10vh;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .main{
+        margin-left: 10vh;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1550px) {
+    .main{
+        margin-left: 30vh;
+    }
+}
+
+.product {
+    flex: 1 0 290px;
+    max-width: 290px;
+    min-height: 455px;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.product:hover {
+    box-shadow: 0px 0px 20px 0px grey;
+}
+
+.productImage {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid black;
+}
+
+.AddToCart {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: black;
+    color: white;
+}
+.AddToCart:hover {
+    background-color: yellow;
+    color: #000;
+}
+
+.rectangle {
+    padding-left: 90px;
+    margin-top: 15px;
+}
+
+/* SHOPPING CART */
+.shoppingHeading {
+    margin-top: 5px;
+    color: yellow;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.cart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #1f1e1e;
+    color: white;
+    position: fixed;
+    width: 400px;
+    padding: 10px;
+}
+
+
+.cardContainer {
+    margin-top: 30px;
+    max-height: 63vh;
+    overflow-y: scroll;
+}
+
+.cardContainer::-webkit-scrollbar {
+    display: none;
+}
+
+tr {
+    height: 90px;
+    text-align: left;
+    border-bottom: 2px solid yellow;
+}
+
+td {
+    padding-left: 5px;
+    line-height: 90px;
+}
+
+.sign{
+    position: fixed;
+    font-size: 30px;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.checkout{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    height: 110px;
+    background-color: #1f1e1e;
+    border-top: 2px solid black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.subTotal {
+    display: flex;
+    flex-flow: row;
+    gap: 240px;
+}
+
+.checkoutButton {
+    width: 380px;
+    height: 40px;
+    line-height: 40px;
+    background-color: black; 
+}
+
+.cardImage {
+   width: 100%;
+   height: 50px;
+   border: 1px solid white;
+}
+
+/* PRODUCT DETAILS */
+.ProductDetails {
+    margin: 20px;
+    display: flex;
+    flex-flow: row;
+}
+
+.ProductDetailsImage {
+    flex: 0 0 60%;
+    margin-right: 20px;
+}
+
+.imageStyles {
+    width: 100%;
+    height: auto;
+    max-height: 370px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.buttonStyles {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.ProductDetailsContent {
+    padding-left: 20px;
+    flex: 0 0 40%;
+}
+
+.red {
+    color: red;
+}
+
+.borderStyles {
+    border: 1px solid black;
+    max-width: 113px;
+    padding: 8.5px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.count {
+    margin: 0 10px;
+}
+
+.ATC {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+@media (max-width: 800px) {
+    .ProductDetails{
+        flex-flow: column;
+    }
+    .ProductDetailsImage {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .ProductDetailsContent {
+        flex: 0 0 100%;
+    }
+}
