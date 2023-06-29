@@ -1,6 +1,7 @@
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineDelete } from 'react-icons/ai';
 import { GrCart } from 'react-icons/gr';
 import { RxCross1 } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
 
 export default function ShoppingCart({ totalItems, toggle, handleClick, cartItems, add, subtract, removeFromCart }) {
 
@@ -10,7 +11,7 @@ export default function ShoppingCart({ totalItems, toggle, handleClick, cartItem
     product.count>0 && 
     <div key={product.id}>
       <tr>
-      <td style={{width: "80px"}}><img src={product.thumbnail} alt={product.title} className='cardImage'/></td>  
+      <td style={{width: "80px"}}><Link to={`/product/${product.id}`}><img src={product.thumbnail} alt={product.title} className='cardImage'/></Link></td>  
       <td style={{width: "250px", lineHeight: "20px", fontSize: "11px"}}><p>{product.title}</p></td>
       <td style={{color: "yellow"}}><p>${product.price}</p></td>
       <div>  

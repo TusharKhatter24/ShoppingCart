@@ -63,14 +63,10 @@ export default function App() {
       <div>
       <Link to="/"><AiFillHome className='home' /></Link>
       <ShoppingCart totalItems={totalItems} toggle={toggle} handleClick={handleClick} cartItems={products} add={add} subtract={subtract} removeFromCart={removeFromCart} />
-        <Routes>
-          <Route path="/" element={
-              <div>
-                <ProductList products={products} add={add} subtract={subtract} />
-              </div>
-          }/>
-          <Route path="/product/:id" element={<ProductDetails products={products} add={add} subtract={subtract} />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<ProductList products={products} add={add} subtract={subtract} />}/>
+        <Route path="/product/:id" element={<ProductDetails products={products} add={add} subtract={subtract} />} />
+      </Routes>
       </div>
     </Router>
     );
